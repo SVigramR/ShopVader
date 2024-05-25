@@ -1,10 +1,11 @@
 import './App.css'
+import HeadSection from './components/HeadSection'
 
 function App() {
 
   return (
     <>
-      <h1>SVigramR Shopping Cart</h1>
+      <HeadSection />
     </>
   )
 }
