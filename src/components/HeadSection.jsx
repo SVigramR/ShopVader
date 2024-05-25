@@ -21,8 +21,8 @@ function HeadSection() {
                 <div className={head.logo}>
                     <img src="/static/images/ShopVader(2).png" alt="ShopVader" />
                 </div>
-                <div>
-                    <ul className={head.nav}>
+                <div className={`${head.nav} ${active ? head.active : ''}`}>
+                    <ul>
                         <li onClick={removeActive}>
                             <Link className={head.links} to="/">Home</Link>
                         </li>
@@ -33,9 +33,9 @@ function HeadSection() {
                             <Link className={head.links} to="/">About</Link>
                         </li>
                     </ul>
-                </div>
-                <div className={head.cartNav}>
-                    <FontAwesomeIcon icon={faCartShopping} />
+                    <div className={head.cartNav} onClick={removeActive}>
+                        <FontAwesomeIcon icon={faCartShopping} />
+                    </div>
                 </div>
                 <div className={`${head.menu} ${active ? head.active : ''}`} onClick={toggleActive}>
                     <span className={head.bar}></span>

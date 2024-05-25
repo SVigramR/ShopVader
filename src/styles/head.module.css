@@ -2,9 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(98, 98, 98, 0.3);
+    background-color: rgb(17, 17, 17);
     height: 15vh;
     padding: 0 2rem;
+    z-index: 1;
 }
 
 .logo img {
@@ -12,6 +13,13 @@
 }
 
 .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.nav ul {
     list-style: none;
     display: flex;
     gap: 2.5rem;
@@ -28,9 +36,6 @@
 }
 
 @media screen and (max-width: 780px) {
-    .headSection {
-        height: max-content;
-    }
     .menu {
         display: block;
         cursor: pointer;
@@ -42,6 +47,8 @@
         display: block;
         background-color: #ffffff;
         margin: 5px;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
     }
 
     .menu.active .bar:nth-child(2){
@@ -55,25 +62,31 @@
     }
 
     .nav {
+        visibility: hidden;
         position: absolute;
         flex-direction: column;
-        gap: 0;
-        top: 70px;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        top: 15vh;
         left: -100%;
         text-align: start;
         width: 100%;
-        height: max-content;
         transition: 0.7s ease-in-out;
-        background-color: aliceblue;
-        padding: 10px;
-      }
+        background-color: rgb(17, 17, 17);
+        padding: 0 3rem;
+    }
     
-      .nav.active {
+    .nav.active {
+        visibility: visible;
         left: 0;
-      }
-    
-      .nav li {
-        margin: 16px 0;
-      }
+    }
+
+    .nav ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
