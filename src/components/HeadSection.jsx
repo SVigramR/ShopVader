@@ -19,7 +19,7 @@ function HeadSection() {
         <>
             <div className={head.headSection}>
                 <div className={head.logo}>
-                    <img src="/static/images/ShopVader(2).png" alt="ShopVader" />
+                    <img src="/static/images/ShopVader.png" alt="ShopVader" />
                 </div>
                 <div className={`${head.nav} ${active ? head.active : ''}`}>
                     <ul>
