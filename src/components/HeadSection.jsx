@@ -29,7 +29,7 @@ function HeadSection() {
                             <Link className={head.links} to="/">Home</Link>
                         </li>
                         <li onClick={removeActive}>
-                            <Link className={head.links} to="/">Shop</Link>
+                            <Link className={head.links} to="/shop">Shop</Link>
                         </li>
                     </ul>
                 </div>
