@@ -1,13 +1,13 @@
 import './App.css'
 import HeadSection from './components/HeadSection'
-import HeroSection from './components/HeroSection'
+import HomePage from './Home'
 
 function App() {
 
   return (
     <>
       <HeadSection />
-      <HeroSection />
+      <HomePage />
     </>
   )
 }

@@ -1,0 +1,23 @@
+.deal {
+    background-color: black;
+    margin-top: 2rem;
+}
+
+.cardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.dealInfo {
+    padding: 1rem;
+}
+
+.btn {
+    background-color: none;
+    color: white;
+    border: none;
+}
