@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 import cate from '../styles/category.module.css'
 
 function Category({ category, type }) {
@@ -19,9 +19,9 @@ function Category({ category, type }) {
     }
 }
 
-Category.PropTypes = {
-    category: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired,
+Category.propTypes = {
+    category: propTypes.string.isRequired,
+    type: propTypes.string.isRequired,
 }
 
 export default Category;
