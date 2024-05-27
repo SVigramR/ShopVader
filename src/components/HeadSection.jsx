@@ -1,6 +1,6 @@
 import head from '../styles/head.module.css'
 import { Link } from "react-router-dom";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { faBorderStyle, faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from 'react';
 
@@ -18,8 +18,10 @@ function HeadSection() {
     return (
         <>
             <div className={head.headSection}>
-                <div className={head.logo}>
-                    <img src="/static/images/ShopVader.png" alt="ShopVader" />
+                <div className={`${head.menu} ${active ? head.active : ''}`} onClick={toggleActive}>
+                    <span className={head.bar}></span>
+                    <span className={head.bar}></span>
+                    <span className={head.bar}></span>
                 </div>
                 <div className={`${head.nav} ${active ? head.active : ''}`}>
                     <ul>
@@ -27,20 +29,18 @@ function HeadSection() {
                             <Link className={head.links} to="/">Home</Link>
                         </li>
                         <li onClick={removeActive}>
-                            <Link className={head.links} to="/">Products</Link>
-                        </li>
-                        <li onClick={removeActive}>
-                            <Link className={head.links} to="/">About</Link>
+                            <Link className={head.links} to="/">Shop</Link>
                         </li>
                     </ul>
-                    <div className={head.cartNav} onClick={removeActive}>
-                        <FontAwesomeIcon icon={faCartShopping} />
-                    </div>
                 </div>
-                <div className={`${head.menu} ${active ? head.active : ''}`} onClick={toggleActive}>
-                    <span className={head.bar}></span>
-                    <span className={head.bar}></span>
-                    <span className={head.bar}></span>
+                <div className={head.logo}>
+                    <h1>ShopVader</h1>
+                </div>
+                <div className={head.cartNav} onClick={removeActive}>
+                    <button>
+                        <FontAwesomeIcon className={head.cartIcon} icon={faCartShopping} />
+                        <span className={head.cardCounter}>0</span>
+                    </button>
                 </div>
             </div>
         </>

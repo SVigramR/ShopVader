@@ -16,7 +16,8 @@
     gap: 10px;
     max-width: 500px;
     height: 300px;
-    background-color: rgba(243, 0, 0, 0.514);
+    /* background-color: rgba(243, 0, 0, 0.514); */
+    background-color: rgba(38, 55, 67, 0.5);
     margin-right: 30vw;
     padding: 10px;
     border-radius: 1rem;
