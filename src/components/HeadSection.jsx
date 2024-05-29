@@ -1,11 +1,12 @@
 import head from '../styles/head.module.css'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { faBorderStyle, faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from 'react';
 
 function HeadSection() {
     const [active, setActive] = useState(false)
+    const navigate = useNavigate()
 
     const toggleActive = () => {
         setActive(!active)
@@ -37,7 +38,7 @@ function HeadSection() {
                     <h1>ShopVader</h1>
                 </div>
                 <div className={head.cartNav} onClick={removeActive}>
-                    <button>
+                    <button onClick={() => navigate('cart')} >
                         <FontAwesomeIcon className={head.cartIcon} icon={faCartShopping} />
                         <span className={head.cardCounter}>0</span>
                     </button>
