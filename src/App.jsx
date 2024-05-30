@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <HeadSection />
+      <HeadSection cart={cart} />
       <Outlet  context={[cart, setCart]}/>
       <FooterSection />
     </>
