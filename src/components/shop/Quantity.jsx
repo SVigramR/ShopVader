@@ -17,12 +17,18 @@ function Quantity({ item }) {
             category: item.category,
             quantity: quantity,
         }
-        console.log(newCart)
         const findItem = cart.find((element) => element.id === item.id)
-        console.log(findItem)
         if (findItem === undefined) {
             setCart([ ...cart, newCart])
-            console.log(cart)
+        } else {
+            const currentCartIndex = cart.findIndex((todo) => todo.id === item.id); 
+            const updatedCart = { ...findItem, quantity: findItem.quantity + quantity };
+            const appendCart = [
+                ...cart.slice(0, currentCartIndex),
+                updatedCart,
+                ...cart.slice(currentCartIndex + 1)
+              ];
+            setCart(appendCart)
         }
     }
 
