@@ -21,8 +21,8 @@ function useProductsURL() {
 function Products() {
     const { data, error, loading } = useProductsURL()
 
-    if (loading) return <p>Loading...</p>;
-    if (error) return <p>A network error was encountered</p>;
+    if (loading) return <p className={product.expand}>Loading...</p>;
+    if (error) return <p className={product.expand}>A network error was encountered</p>;
 
     return (
         <>

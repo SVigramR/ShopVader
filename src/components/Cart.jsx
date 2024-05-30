@@ -60,7 +60,7 @@ function Cart() {
     } else {
         return (
             <>
-                <h2>Add Items to the Cart</h2>
+                <h2 className={cartStyle.cartPage}>Add Items to the Cart</h2>
             </>
         )
     }

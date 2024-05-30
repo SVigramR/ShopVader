@@ -6,6 +6,7 @@
     margin-top: 3rem;
     width: 100vw;
     background-color: #222630;
+    flex-shrink: 0;
 }
 
 li {
