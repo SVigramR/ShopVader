@@ -10,7 +10,7 @@ function Cart() {
             const element = cart[index].totalPrice();
             sum += Number(element)
         }
-        return sum
+        return sum.toFixed(2)
     }
 
     const handlePurchase = () => {
