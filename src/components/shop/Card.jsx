@@ -11,7 +11,7 @@ function Card({ item }) {
                         <p>{item.title}</p>
                         <p className={card.price}>${item.price}</p>
                     </div>
-                    <Quantity />
+                    <Quantity item={item} />
                 </div>
             </div>
         </>
