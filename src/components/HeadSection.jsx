@@ -25,14 +25,14 @@ function HeadSection({ cart }) {
                     <span className={head.bar}></span>
                 </div>
                 <div className={`${head.nav} ${active ? head.active : ''}`}>
-                    <ul>
-                        <li onClick={removeActive}>
+                    <div className={head.ul}>
+                        <div className={head.headLi} onClick={removeActive}>
                             <Link className={head.links} to="/">Home</Link>
-                        </li>
-                        <li onClick={removeActive}>
+                        </div>
+                        <div className={head.headLi} onClick={removeActive}>
                             <Link className={head.links} to="/shop">Shop</Link>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
                 <div className={head.logo}>
                     <h1>ShopVader</h1>
