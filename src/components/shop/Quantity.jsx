@@ -15,6 +15,11 @@ function Quantity({ item }) {
             title: item.title,
             price: item.price,
             category: item.category,
+            totalPrice: function () {
+                let mul = this.price * this.quantity
+                let deci = mul.toFixed(2)
+                return deci
+            },
             quantity: quantity,
         }
         const findItem = cart.find((element) => element.id === item.id)
