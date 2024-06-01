@@ -27,22 +27,22 @@
 }
 
 .groceries {
-    background-image: url(/public/static/images/abundance-fresh-ripe-healthy-groceries-outdoors-generated-by-ai.jpg);
+    background-image: url(/static/images/abundance-fresh-ripe-healthy-groceries-outdoors-generated-by-ai.jpg);
     background-size: cover;
 }
 
 .furniture {
-    background-image: url(/public/static/images/view-light-lamp-with-futuristic-design.jpg);
+    background-image: url(/static/images/view-light-lamp-with-futuristic-design.jpg);
     background-size: cover;
 }
 
 .fragrances {
-    background-image: url(public/static/images/assortment-beauty-products-displayed-shelf.jpg);
+    background-image: url(/static/images/assortment-beauty-products-displayed-shelf.jpg);
     background-size: cover;
 }
 
 .cosmetic {
-    background-image: url(public/static/images/different-type-makeup-products-black-backdrop.jpg);
+    background-image: url(/static/images/different-type-makeup-products-black-backdrop.jpg);
     background-size: cover;
 }
 
