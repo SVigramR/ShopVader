@@ -45,3 +45,26 @@
     background-image: url(public/static/images/different-type-makeup-products-black-backdrop.jpg);
     background-size: cover;
 }
+
+.btn {
+    font-size: 2rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 10px;
+    color: white;
+    background-color: #242933;
+    transition: .8s;
+}
+
+.btn:hover {
+    background-color: #25c7da;
+    color: white;
+    transform: scale(1.1);
+}
+
+.btnActive {
+    background-color: #25c7da;
+    color: white;
+    transform: scale(1.1);
+}
+
