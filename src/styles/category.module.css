@@ -1,3 +1,12 @@
+.cardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem;
+}
+
 .card {
     width: 300px;
     height: 400px;
@@ -9,6 +18,30 @@
     border-radius: 1rem;
 }
 
-.head {
+.links {
+    color: white;
+    font-weight: 900;
     margin-bottom: 2rem;
+    font-size: 2rem;
+    z-index: 5;
+}
+
+.groceries {
+    background-image: url(/public/static/images/abundance-fresh-ripe-healthy-groceries-outdoors-generated-by-ai.jpg);
+    background-size: cover;
+}
+
+.furniture {
+    background-image: url(/public/static/images/view-light-lamp-with-futuristic-design.jpg);
+    background-size: cover;
+}
+
+.fragrances {
+    background-image: url(public/static/images/assortment-beauty-products-displayed-shelf.jpg);
+    background-size: cover;
+}
+
+.cosmetic {
+    background-image: url(public/static/images/different-type-makeup-products-black-backdrop.jpg);
+    background-size: cover;
 }

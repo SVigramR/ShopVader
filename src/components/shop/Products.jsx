@@ -1,25 +1,26 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
 import product from '/src/styles/products.module.css'
+// import { useResolvedPath } from "react-router-dom";
 
-function useProductsURL() {
+function useProductsURL(url) {
     const [data, setData] = useState()
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('https://dummyjson.com/products', { mode: "cors" })
+        fetch(url, { mode: "cors" })
         .then((response) => response.json())
         .then((response) => setData(response.products))
         .catch((error) => setError(error))
         .finally(() => setLoading(false));
-    },[])
+    },[url])
 
     return { data, error, loading }
 }
 
-function Products() {
-    const { data, error, loading } = useProductsURL()
+function Products({categoryURL}) {
+    const { data, error, loading } = useProductsURL(categoryURL)
 
     if (loading) return <p className={product.expand}>Loading...</p>;
     if (error) return <p className={product.expand}>A network error was encountered</p>;

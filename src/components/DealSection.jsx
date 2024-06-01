@@ -1,7 +1,9 @@
 import deals from '../styles/deals.module.css';
+import { useNavigate, useOutletContext } from 'react-router-dom';
 import Category from './Category';
 
 function Deals() {
+    const {category, setCategory} = useOutletContext()
     return (
         <>
             <div className={deals.deal}>
@@ -9,12 +11,7 @@ function Deals() {
                     <h1>🛒 Ready to Save?</h1>
                     <p>Start adding items to your cart now and take advantage of the best deals around. Happy shopping!</p>
                 </div>
-                <div className={deals.cardContainer}>
-                    <Category category={'Electronics'} type={'card'} />
-                    <Category category={'Clothes'} type={'card'} />
-                    <Category category={'Shoes'} type={'card'} />
-                    <Category category={'Furniture'} type={'card'} />
-                </div>
+                <Category category={category} setCategory={setCategory} type={'card'} />
             </div>
         </>
     )

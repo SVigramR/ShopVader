@@ -4,7 +4,7 @@ import quant from '/src/styles/quantity.module.css'
 
 function Quantity({ item }) {
     const [quantity, setQuantity] = useState(0);
-    const [cart, setCart] = useOutletContext()
+    const {cart, setCart} = useOutletContext()
    
     const increment = () => setQuantity((countValue) => countValue + 1);
     const decrement = () => setQuantity((countValue) => countValue - 1);

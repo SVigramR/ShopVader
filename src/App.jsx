@@ -6,11 +6,12 @@ import { useState } from 'react';
 
 function App() {
   const [cart, setCart] = useState([])
+  const [category, setCategory] = useState('https://dummyjson.com/products')
 
   return (
     <>
       <HeadSection cart={cart} />
-      <Outlet  context={[cart, setCart]}/>
+      <Outlet  context={{cart, setCart, category, setCategory}}/>
       <FooterSection />
     </>
   )
