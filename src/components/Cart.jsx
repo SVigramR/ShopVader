@@ -2,7 +2,7 @@ import { useOutletContext } from "react-router-dom";
 import cartStyle from '../styles/cart.module.css'
 
 function Cart() {
-    const [cart, setCart] = useOutletContext()
+    const {cart, setCart} = useOutletContext()
     
     const sumTotal = () => {
         let sum = 0
