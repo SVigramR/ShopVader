@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: #2a303c;
-    height: 15vh;
+    height: 130px;
     padding: 0 2rem;
     z-index: 1;
 }
@@ -66,8 +66,13 @@
     transform: scale(0.9);
 }
 
+.logo {
+    font-size: 1.5rem;
+}
+
 .cartNav {
     font-size: 2rem;
+    margin-right: 4rem;
     transition: .8s;
 }
 
@@ -196,5 +201,13 @@
     .headLi:active {
         background-color: #242933;
         transform: scale(0.9);
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .cartNav {
+        margin-right: 0;
     }
 }

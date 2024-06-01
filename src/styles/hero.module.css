@@ -37,8 +37,19 @@
     padding: 10px;
     font-size: 1.5rem;
     border-radius: 1rem;
-    background-color: black;
-    border-color: whitesmoke;
+    background-color: #242933;
+    border: none;
+    transition: 0.9s;
+}
+
+.info button:hover {
+    transform: scale(1.1);
+    background-color: #25c7da;
+}
+
+.info button:active {
+    transform: scale(0.9);
+    background-color: #25c7da;
 }
 
 .link {
