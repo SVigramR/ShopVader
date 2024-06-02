@@ -47,7 +47,7 @@ function Cart() {
                             <tr>
                                 <td></td>
                                 <td></td>
-                                <td>Sum</td>
+                                <td>Total</td>
                                 <td></td>
                                 <td>${sumTotal()}</td>
                             </tr>
